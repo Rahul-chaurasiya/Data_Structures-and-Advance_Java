@@ -81,6 +81,49 @@ public class j14_left_rotate_array_by_d {
 
 
 
+==========================================================================
+    
+    
+public class j14_left_rotate_array_by_d {
+
+    static void dRotate(int arr[], int d, int n) {
+        rotate(arr, 0, d - 1);
+        rotate(arr, d, n - 1);
+        rotate(arr, 0, n - 1);
+    }
+
+    static void rotate(int arr[], int low, int high) {
+        while (low < high) {
+            int temp = arr[low];
+            arr[low] = arr[high];
+            arr[high] = temp;
+            low++;
+            high--;
+        }
+    }
+
+    public static void main(String args[]) {
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7 }, n = 7, d = 2;
+
+        System.out.println("Before Rotation");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+
+        dRotate(arr, d,n);
+
+        System.out.println("After Rotation");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+    }
+}
+
 
 
 
