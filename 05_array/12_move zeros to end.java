@@ -35,3 +35,46 @@ public class j12_move_zeros_to_end {
 
     }
 }
+
+
+
+============================================================
+    
+// eficient solution
+    
+public class j12_move_zeros_to_end {
+
+    static void movezero(int arr[], int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != 0) {                     
+                int temp = arr[i];
+                arr[count] = arr[i];
+                count++;
+            }
+        }
+
+        for(int i=n-1;i>=count;i--){
+            arr[i]=0;
+        }
+    }
+
+    public static void main(String args[]) {
+        int arr[] = { 10, 5, 0, 0, 8, 0, 9 }, n = 7;
+
+        System.out.println("Before Removal");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println("After Removal");
+        movezero(arr, n);
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+    }
+}
+
