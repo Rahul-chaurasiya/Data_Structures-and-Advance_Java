@@ -4,7 +4,7 @@ public class j06_print_1_to_n {
 		if(n == 0)
 			return;
 		
-    printToN(n - 1);
+    		printToN(n - 1);
 		System.out.print(n+" ");
 	}
     public static void main(String [] args) 
