@@ -67,3 +67,29 @@ public class j07_tail_recursion {
         fun(3, 1);
     }
 }
+
+
+=========================================================
+
+	
+public class j08_natural_number_sum {
+
+    // static int sum(int n){
+    //     if(n<=0)
+    //         return n;
+    //     return (n+sum(n-1));
+    // }
+
+    // tail recursive solution
+    static int sum(int n, int k) {
+        if (n == 1 || n == 0)
+            return k;
+        return sum(n - 1, k + n);
+    }
+
+    public static void main(String [] args) 
+    {
+    	int n = 4;
+    	System.out.println(sum(1,1));
+    }
+}
