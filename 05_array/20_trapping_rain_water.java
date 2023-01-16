@@ -46,7 +46,7 @@ public class j20_trapping_rain_water {
             rmax[i] = Math.max(rmax[i + 1], arr[i]);
         }
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n-1; i++) {
             res += Math.min(lmax[i], rmax[i]) - arr[i];
         }
         return res;
