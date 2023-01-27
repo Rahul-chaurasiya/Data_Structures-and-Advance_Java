@@ -7,6 +7,12 @@ public class j05_arraylist_methods {
         al.add("geeks");
         al.add("ide");
         al.add("courses");
+        
+        //sorting---------------------------
+        Collections.sort(al);                 /**We can sort ArrayList uaing "Colections.sort" key-word , also we have to imprt "Collections" package*/
+        System.out.println(al);
+        
+        System.out.println("==============================================================");
 
         System.out.println(al);
         al.add(1, "practice");
