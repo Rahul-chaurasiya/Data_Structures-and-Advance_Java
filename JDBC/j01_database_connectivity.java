@@ -11,7 +11,7 @@ class j01_database_connectivity {
             // Creating a connection
             String db_url = "jdbc:mysql://localhost:3306/university?useSSL=false";
             String db_uname = "root";
-            String db_upass = "#Rahul123";
+            String db_upass = "*********";
             Connection con = DriverManager.getConnection(db_url, db_uname, db_upass);
 
             if (con.isClosed()) {
