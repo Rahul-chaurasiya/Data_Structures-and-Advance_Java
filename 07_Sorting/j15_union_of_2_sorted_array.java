@@ -1,34 +1,38 @@
 public class j15_union_of_2_sorted_array {
-    static void union(int arr1[], int arr2[]) {
+    static void union(int a[], int b[]) {
         int i = 0, j = 0;
-        while (i < arr1.length && j < arr2.length) {
-            if ((i > 0 && arr1[i] == arr1[i - 1])) {
+        int m = a.length;
+        int n = b.length;
+        while (i < m && j < n) {
+            if (i > 0 && a[i - 1] == a[i]) {
                 i++;
                 continue;
             }
-            if (j > 0 && arr2[j] == arr2[j - 1]) {
+            if (j > 0 && b[j - 1] == b[j]) {
                 j++;
                 continue;
             }
-            if (arr1[i] > arr2[j]) {
-                System.out.println(arr1[j] + " ");
-                j++;
-            } else if (arr1[i] < arr2[j]) {
-                System.out.println(arr1[i] + " ");
+            if (a[i] < b[j]) {
+                System.out.print(a[i] + " ");
                 i++;
-            } else if (arr1[i] == arr2[j]) {
-                System.out.println(arr1[i] + " ");
+            } else if (a[i] > b[j]) {
+                System.out.print(b[j] + " ");
+                j++;
+            } else {
+                System.out.print(a[i] + " ");
                 i++;
                 j++;
             }
         }
-        while (i < arr1.length) {
-            if ((i > 0 && arr1[i] != arr1[i - 1]))
-                System.out.println(arr1[i++] + " ");
+        while (i < m) {
+            if (i == 0 || a[i] != a[i - 1])
+                System.out.print(a[i] + " ");
+            i++;
         }
-        while (j < arr2.length) {
-            if (j > 0 && arr2[j] != arr2[j - 1])
-                System.out.println(arr2[j++] + " ");
+        while (j < n) {
+            if (j == 0 || b[j] != b[j - 1])
+                System.out.print(b[j] + " ");
+            j++;
         }
     }
 
