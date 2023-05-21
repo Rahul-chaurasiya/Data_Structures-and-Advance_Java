@@ -1,3 +1,8 @@
+<!-- http://localhost:9494/servlet/   url dene pr index.html wala page autmatically open ho jayega kuki index.html default page hota h  
+it means url: http://localhost:9494/servlet/  and url: http://localhost:9494/servlet/index.html  ka same hi response rhega. open index.html wala page hi hoga 
+yaha url: http://localhost:9494/servlet/j01_servl krege tb j01_servlet.java wala page open ho jayega lekin j01_servlet page open krne k liye extension k saath url: http://localhost:9494/servlet/j01_servlet.html deni pdegi -->
+
+
 <!-- servlet tag ka class name or servlet mapping tag ka class name same hona chahiye.
 yaha hmne j01_servlet class name waale file ko 1 name diya then us name ka url pattern d diya ab jb server se request aayegi tb is servlet name waali file as a response show hogi -->
 
