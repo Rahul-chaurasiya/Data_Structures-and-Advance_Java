@@ -1,0 +1,28 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <servlet>
+        <servlet-name>j21_excelsheet</servlet-name>
+        <servlet-class>j21_excelsheet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>j21_excelsheet</servlet-name>
+        <url-pattern>/j21_excelsheet</url-pattern>
+    </servlet-mapping>
+  
+  
+    
+    <servlet>
+        <servlet-name>j22_wordservlet</servlet-name>
+        <servlet-class>j22_wordservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>j22_wordservlet</servlet-name>
+        <url-pattern>/j22_wordservlet</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
