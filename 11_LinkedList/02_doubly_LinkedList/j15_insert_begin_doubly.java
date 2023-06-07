@@ -11,7 +11,7 @@ class Node {
     }
 }
 
-class j15_doubly_linkedlist {
+class j15_insert_begin_doubly {
 
     static Node insert_begin(Node head,int x){
         Node temp = new Node(x);
