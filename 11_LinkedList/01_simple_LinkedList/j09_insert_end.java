@@ -13,10 +13,11 @@ public class j09_insert_end {
 
     static Node insert_end(Node head, int x) {
         Node new_head = new Node(x);
-        while (head.next != null) {
-            head = head.next;
+        Node curr = head;
+        while (curr.next != null) {
+            curr = curr.next;
         }
-        head.next = new_head;
+        curr.next = new_head;
         return head;
     }
 
